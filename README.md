@@ -1,22 +1,24 @@
-# VisionX-AI-Powered-Fake-Food-Image-Detection-System
-AI-powered computer vision system for detecting fake and manipulated food images to prevent misleading food listings on platforms like Zomato, Swiggy, and Blinkit using advanced image an# VisionX — AI-Powered Fake Food Image Detection System 🍔🤖
 
-VisionX is an intelligent AI-based image verification system designed to detect fake, AI-generated, or manipulated food images uploaded on online food delivery platforms.
+# Phase 2: AI vs Real Image Classifier
 
-The system leverages Computer Vision and Deep Learning techniques to analyze food images, verify authenticity, and help reduce customer dissatisfaction caused by misleading food visuals.
+## Objective
+Train a binary classifier to detect AI-generated vs real food damage images.
 
-## 🚀 Key Objectives
-- Detect AI-generated and edited food images
-- Identify misleading food presentation
-- Improve trust between customers and restaurants
-- Support platforms like Zomato, Swiggy, and Blinkit with automated food verification
-- Provide fast and accurate image authenticity analysis
+## Folder Structure
+dataset/
+├── train/real, train/ai
+├── val/real, val/ai
+└── test/real, test/ai
 
-## 🛠️ Tech Stack
-- Python
-- Deep Learning
-- Computer Vision
-- OpenCV
-- TensorFlow/Keras
-- Flask
-- Machine Learning Modelsalysis.
+## Steps
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Add images to dataset folders
+3. Train model:
+   python train_model.py
+4. Model saved as ai_vs_real_food_detector.h5
+
+## Highlights
+- EfficientNet-B0 transfer learning
+- Data augmentation for adversarial robustness
+- Metadata forensics layer
