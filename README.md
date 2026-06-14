@@ -22,3 +22,7 @@ dataset/
 - EfficientNet-B0 transfer learning
 - Data augmentation for adversarial robustness
 - Metadata forensics layer
+
+## Demo
+
+Upload food image → AI analyzes → Real/Fake prediction → GradCAM explanation
